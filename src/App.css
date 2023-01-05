@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(79deg, #9b6bd2, #5c54b3 48%, #74b5d1);
+}
+
+.auth-form-container,.login-form,.register-form, .title-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container{
+  padding: 5rem;
+}
+
+.auth-form-container{
+  padding: 7rem;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+button:not(.link-btn):hover {
+  background-color: black;
+  color: white;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.link-btn {
+  background: none;
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (max-width: 749px){
+
+  .title-container{
+    display:block;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .auth-form-container, .title-container{
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 749px) and (max-height: 540px){
+
+  .title-container{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 259px){
+
+  * {
+    display:none;
+  }
+}
+
+@media screen and (max-height: 243px){
+  * {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 300px){
+
+  .title-container{
+    display:block;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .auth-form-container, .title-container{
+    padding: 1rem 2rem;
+  }
+}
